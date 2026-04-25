@@ -8,9 +8,11 @@ import nltk
 from textblob import TextBlob
 from nltk.corpus import stopwords
 
-nltk.download('stopwords', quiet=True)
-nltk.download('punkt',     quiet=True)
-nltk.download('punkt_tab', quiet=True)
+nltk.download('stopwords',        quiet=True)
+nltk.download('punkt',            quiet=True)
+nltk.download('punkt_tab',        quiet=True)
+nltk.download('wordnet',          quiet=True)   # ← TextBlob lemmatization için
+nltk.download('omw-1.4',          quiet=True)   # ← wordnet dil desteği
 
 stop_words = set(stopwords.words('english'))
 
